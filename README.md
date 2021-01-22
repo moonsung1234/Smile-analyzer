@@ -4,6 +4,8 @@
 
 - cnn 알고리즘을 사용하여 얼굴이 smile 인지 sad 인지 구분하는 딥러닝 모델.
 
+<br/>
+
 ```python
 from smilemodel import SmileModel
 
@@ -16,9 +18,12 @@ print(sm.predict(array))
 ```
 
 <br/>
+<br/>
 
 - 학습 이미지는 smile 이미지, sad 이미지 각각 8700개, 2900개씩 기본적으로 들어있음.
 - 학습 이미지의 개수에 따라 모델의 정확성이 달라질 수 있음.
+
+<br/>
 
 ```python
 from smilemodel import SmileModel
@@ -30,9 +35,12 @@ sm.getImages(스크롤 카운트) # 스크롤 카운트 : 총 스크롤할 횟�
 ```
 
 <br/>
+<br/>
 
 - 기본적으로 들어있는 학습 이미지로 학습을 진행한 결과, 정확도가 최소 80% 후반에서 최대 90% 후반까지 나오는걸 확인할 수 있음.
 - 이미지의 개수에 따라 정확도가 달라질 수 있음.
+
+<br/>
 
 ```python
 from smilemodel import SmileModel
