@@ -5,7 +5,7 @@ from imagecnn import ImageCnnModel
 import random
 import os
 
-images_path = "C:/Users/muns3/OneDrive/Desktop/python-project/learning-program/smile_analyzer/images"
+#images_path = "C:/Users/muns3/OneDrive/Desktop/python-project/learning-program/smile_analyzer/images"
 
 class SmileModel :
     def __init__(self, image_path) :
@@ -90,8 +90,3 @@ class SmileModel :
                     acc_count += 1
 
         return acc_count / accuracy_count
-
-sm = SmileModel(images_path)
-#sm.train(5)
-array = sm.getImageArray("C:/Users/muns3/OneDrive/Desktop/node-project/mini_game_server/pictures/dog.jfif")
-print(sm.predict(array))
